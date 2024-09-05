@@ -18,6 +18,29 @@
   </head>
   <body>
 
+    <!-- <form>
+      <label for="mail">
+        I would like you to provide me with an email address:
+      </label>
+      <input type="email" id="mail" name="mail" />
+      <button>Submit</button>
+    </form>
+
+    <script>
+      const email = document.getElementById("mail");
+
+    email.addEventListener("input", (event) => {
+      if (email.validity.typeMismatch) {
+    email.setCustomValidity("I am expecting an email address!");
+      } else {
+    email.location.replace("/1button.html");
+    }
+    });
+
+    </script> -->
+
+
+
 
     <!-- <form id="form1">
       <label for="fname">Имя:</label>
@@ -38,20 +61,56 @@
       }
     </script> -->
 
-    <form id="myForm" action="index.html">
-      First name: <input type="text" name="fname" value1=""><br>
-      Last name: <input type="text" name="lname"><br><br>
-      <input type="button" onclick="myFunction()" value="Submit form">
+    <form>
+      <label for="mail">Фамилия работника:</label>
+      <input type="text" id="work" name="fname" value=""><br><br>
+      <label for="mail1">Должность работника:</label>
+      <input type="text" id="work" name="fname" value=""><br><br>
+      <label for="mail2">Дата устройства на работу:</label>
+      <input type="text" id="work" name="fname" value=""><br><br>
+
+      <button type="button" onclick="myFunction()">Войти</button>
     </form>
     
-    <script>
+
+    
+      <script>
+      
+      function myFunction() {
+        let workerName = document.getElementById("work").value
+        if (workerName == "Коршунов") {
+        location.replace("/1button.html")
+      } else {
+        location.replace("/index.html") 
+      }
+    }
+      
+      </script>
+
+
+
+    <!-- <script>
+
+    const email = document.getElementById("mail");
+
+    email.addEventListener("input", (event) => {
+      if (email.value = "Hi") {
+        location.replace("https://www.w3schools.com");
+      } else {
+        email.location.replace("/1button.html");
+    }
+    });
+
+    </script> -->
+
+    <!-- <script>
     function myFunction() { 
       if (myForm.elements.value1 = "") 
       console.log("hiiii")
-      // document.getElementById("myForm").submit()
+      document.getElementById("myForm").submit()
       
     }
-    </script>
+    </script>  -->
 
 
   <!-- <script>
