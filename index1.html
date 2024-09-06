@@ -65,9 +65,9 @@
       <label for="mail">Фамилия работника:</label>
       <input type="text" id="work" name="fname" value=""><br><br>
       <label for="mail1">Должность работника:</label>
-      <input type="text" id="work" name="fname" value=""><br><br>
-      <label for="mail2">Дата устройства на работу:</label>
-      <input type="text" id="work" name="fname" value=""><br><br>
+      <input type="text" id="work1" name="fname" value=""><br><br>
+      <label for="mail2">Дата устройства на работу до 01.01.2015:</label>
+      <input type="техт" id="work2" name="fname" value=""><br><br>
 
       <button type="button" onclick="myFunction()">Войти</button>
     </form>
@@ -78,53 +78,24 @@
       
       function myFunction() {
         let workerName = document.getElementById("work").value
+        let workerName1 = document.getElementById("work1").value
+        let workerName2 = document.getElementById("work2").value
+        
+
         if (workerName == "Коршунов") {
-        location.replace("/1button.html")
-      } else {
-        location.replace("/index.html") 
+      location.replace("/1button.html")
+        } else if (workerName1 == "Аналитик") {
+      location.replace("/2button.html") 
+        } else if (workerName2 == "Да") {
+      location.replace("/3button.html") 
+        } else {
+          location.replace("/index.html") 
+        }
       }
-    }
       
       </script>
 
-
-
-    <!-- <script>
-
-    const email = document.getElementById("mail");
-
-    email.addEventListener("input", (event) => {
-      if (email.value = "Hi") {
-        location.replace("https://www.w3schools.com");
-      } else {
-        email.location.replace("/1button.html");
-    }
-    });
-
-    </script> -->
-
-    <!-- <script>
-    function myFunction() { 
-      if (myForm.elements.value1 = "") 
-      console.log("hiiii")
-      document.getElementById("myForm").submit()
-      
-    }
-    </script>  -->
-
-
-  <!-- <script>
-   let validationOne = HTMLFormElement;
-   function validationOne (value) {
-    if (form.elements.value == "Коршунов")
-    getElementById("myForm").action = "/1button.html";
-   }
-  validationOne()
   
-  </script> -->
-  
-
-
 	<script src="index.js"></script>
   </body>
 </html>
